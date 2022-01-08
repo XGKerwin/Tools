@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mysql.mapper.LabelMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.mysql.bean.Label">
+        <id column="id" property="id" />
+        <result column="userid" property="userid" />
+        <result column="external" property="external" />
+        <result column="title" property="title" />
+        <result column="msg1" property="msg1" />
+        <result column="msg2" property="msg2" />
+        <result column="msg3" property="msg3" />
+        <result column="msg4" property="msg4" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userid, external, title, msg1, msg2, msg3, msg4
+    </sql>
+
+</mapper>

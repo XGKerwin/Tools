@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mysql.mapper.EmpMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.mysql.bean.Emp">
+        <id column="id" property="id"/>
+        <result column="empno" property="empno"/>
+        <result column="ename" property="ename"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id
+        , empno, ename
+    </sql>
+
+    <select id="queryAll" resultType="com.example.mysql.bean.Emp">
+        select *
+        from emp
+    </select>
+
+</mapper>

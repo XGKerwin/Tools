@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: tool
+  profiles:
+    active: hx
+
+server:
+  port: 8085
+
+
+bbb:
+  aaa:
+    - aaaffffect
+    - dgdgfdgd
+  ccc:
+    - aaaffffect
+    - ssssssss
